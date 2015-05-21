@@ -11,7 +11,7 @@ IF NOT EXIST %BINARYDIR% (
   del %BINARYDIR%\* /Q
 )
 
-%SystemRoot%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe %SOURCEDIR%\BellyRub\BellyRub.cspro /property:OutDir=%BINARYDIR%\;Configuration=Release /target:rebuild
+%SystemRoot%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe %SOURCEDIR%\BellyRub\BellyRub.csproj /property:OutDir=%BINARYDIR%\;Configuration=Release /target:rebuild
 
 IF NOT EXIST %DEPLOYDIR% (
   mkdir %DEPLOYDIR%
